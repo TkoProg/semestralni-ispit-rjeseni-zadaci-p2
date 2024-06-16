@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Ovo rjesenje nije EREGANTO but it works LMAO
+// Ovo rjesenje nije EREGANTO, but it works LMAO
 
 void f(int n, int &m, int &k) {
     vector<int> parni, neparni;
