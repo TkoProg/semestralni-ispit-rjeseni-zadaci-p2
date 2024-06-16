@@ -29,19 +29,23 @@ int main() {
     int na(0);
     std::cin >> na;
     set<double> A;
+
     for (int i(0); i < na; i++) {
         double x;
         std::cin >> x;
         A.insert(x);
     }
+
     int nb(0);
     std::cin >> nb;
     set<double> B;
+
     for (int i(0); i < nb; i++) {
         double x;
         std::cin >> x;
         B.insert(x);
     }
+
     set<double> C = f(A, B);
     for (auto it(C.begin()); it != C.end(); it++)
         cout << *it << " ";
