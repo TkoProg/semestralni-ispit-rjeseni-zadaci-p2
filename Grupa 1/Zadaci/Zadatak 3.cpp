@@ -2,6 +2,8 @@
 #include <vector>
 #include <functional>
 
+using namespace std;
+
 // Ovo nije moj code, ovo je Adisov. Ja ne zelim da znam kako se ovaj zadatak radi uopste lmao...
 
 template<typename T>
@@ -21,20 +23,20 @@ std::function<T(T)> f(const std::vector<T>& v) {
 
 int main() {
     int n;
-    std::cin >> n;
+    cin >> n;
 
     double x;
-    std::vector<double> v(n);
+    vector<double> v(n);
 
     for (int i = 0; i < n; i++) {
-        std::cin >> v[i];
+        cin >> v[i];
     }
 
-    std::cin >> x;
+    cin >> x;
 
     auto F = f<double>(v);
 
-    std::cout << F(x);
+    cout << F(x);
 
     return 0;
 }
