@@ -33,10 +33,7 @@ int main() {
     }
 
     cin >> x;
-
     auto F = f<double>(v);
-
     cout << F(x);
-
     return 0;
 }
