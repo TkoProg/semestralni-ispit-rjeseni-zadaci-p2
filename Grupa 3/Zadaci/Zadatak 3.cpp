@@ -6,6 +6,7 @@
 using namespace std;
 
 // Jos jedan od adisovih zadataka, u gasu smo... (I AINT DOING THIS DAWG)
+// Ovdje nista ne radi cini mi se, a ne popravlja mi se, ne ucim za desetku lol
 
 function<double(double)> f(function<double(double)> f1, function<double(double)> f2) {
     return [f1, f2](double x) {
