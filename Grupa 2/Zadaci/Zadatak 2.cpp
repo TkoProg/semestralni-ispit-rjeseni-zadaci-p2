@@ -51,4 +51,5 @@ int main() {
     int m = 0, k = 0;
     f(123456789, m, k);
     cout<<m<<" "<<k;
+    return 0;
 }
