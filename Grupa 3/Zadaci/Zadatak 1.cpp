@@ -20,11 +20,14 @@ double F(vector<double> &v) {
 
 int main() {
     try {
+        // Iz nekog razloga ni ova deklaracija ne radi, fakat ne kontam sta mi je sa kompajlerom
         vector<double> v={1,-1,40,10,2};
         cout.precision(5);
         cout<<F(v);
+        return 0;
     }
     catch(domain_error &poruka) {
         cout<<poruka.what();
+        return 0;
     }
 }
