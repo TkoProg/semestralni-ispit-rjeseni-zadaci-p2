@@ -40,4 +40,5 @@ int main() {
     cin>>n;
     f(n, m, k);
     cout<<m<<" "<<k;
+    return 0;
 }
