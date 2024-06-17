@@ -20,17 +20,14 @@ double F(vector<double> &v) {
 
 int main() {
     try {
-        // int n;
-        // cin>>n;
+        // Iz nekog razloga ova deklaracija za vektor mi ne radi u kompajleru ali ok...
         vector<double> v{1, 4, 9, -90, 3, 77};
-        //for(int i = 0; i < n; i++) {
-        //    cin>>v[i];
-        //}
         cout.precision(5);
         cout<<F(v);
         return 0;
     }
     catch(domain_error &poruka) {
         cout<<poruka.what();
+        return 0;
     }
 }
